@@ -1,0 +1,6 @@
+{
+  "name": "AEGIS-PROV APT Detection & Investigation",
+  "description": "Enterprise-grade provenance graph threat detection and attack reconstruction system powered by hybrid GAT + GRU + VGAE deep learning on DARPA Transparent Computing telemetry.",
+  "permissions": [],
+  "capabilities": []
+}

@@ -1,0 +1,80 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}System Overview \& End-to-End Pipeline Architecture}{3}{chapter.1}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Core Mission of the System}{3}{section.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Tri-Hybrid Deep Learning Neural Architecture}{3}{section.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}The Threat Detection Working Flowchart}{3}{section.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Tri-Hybrid Neural Core Architecture: Internal Layers, Forward Passes, and Functional Roles.}}{4}{figure.1.1}\protected@file@percent }
+\newlabel{fig:trihybrid_architecture}{{1.1}{4}{Tri-Hybrid Neural Core Architecture: Internal Layers, Forward Passes, and Functional Roles}{figure.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces System Operational Decision Flowchart: From Kernel Stream to SOC Alert DAG.}}{4}{figure.1.2}\protected@file@percent }
+\newlabel{fig:threat_flowchart}{{1.2}{4}{System Operational Decision Flowchart: From Kernel Stream to SOC Alert DAG}{figure.1.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Dataset Foundation \& Preprocessing Phases}{5}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Phase 1: Raw Audit Ingestion \& DARPA CDM Parsing}{5}{section.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}1. What the Raw Telemetry Looks Like}{5}{subsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}2. Parser Execution Mechanics}{5}{subsection.2.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Phase 2: Semantics-Preserving Event Loop Compaction}{6}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}1. The Data Explosion Problem}{6}{subsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}2. The Compaction Algorithm}{6}{subsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Phase 3: Dynamic Temporal Graph Slicing \& Window Buffering}{6}{section.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}1. Why Temporal Slicing Is Necessary}{6}{subsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}2. Multi-Window History Buffering}{6}{subsection.2.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Phase 4: Decoupled Heterogeneous Feature Engineering}{7}{section.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Deep Learning Model Development Phases}{8}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Phase 5: Spatial Context Encoding via Relational GAT}{8}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}1. Purpose \& Motivation}{8}{subsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}2. Mathematical Formulations}{8}{subsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Phase 6: Multi-Window Temporal History Tracking via GRU}{8}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}1. Purpose \& Motivation}{8}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}2. Gate Mechanics}{9}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Phase 7: Probabilistic Latent Space Modeling via VGAE}{9}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}1. Purpose \& Motivation}{9}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}2. Inference Heads \& Reparameterization Trick}{9}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}3. Directed Asymmetric MLP Link Decoder}{9}{subsection.3.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Phase 8: Unsupervised Baseline Training Protocol}{10}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Threat Detection Mechanics: How Attacks Get Caught}{11}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Phase 9: Edge Reconstruction Surprise Formulation}{11}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Concrete Walkthrough on Real DARPA CADETS Attack Scenario}{11}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Phase 10: Multi-Criteria Anomaly Score Fusion \& Thresholding}{12}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}1. Score Fusion}{12}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}2. Strict Calibration for Operational Low False Alarms ($\text  {FPR} \le 0.1\%$)}{12}{subsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Causal Investigation \& Attack Reconstruction Phases}{13}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Phase 11: Automated Bounded Causal Tracing}{13}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}1. The Alarm-to-Investigation Gap}{13}{subsection.5.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}2. Backward Ingress Tracing (Root Cause Discovery)}{13}{subsection.5.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}3. Forward Blast Radius Tracing (Impact Assessment)}{13}{subsection.5.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}4. Dependency Explosion Mitigation}{13}{subsection.5.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Phase 12: MITRE ATT\&CK TTP Mapping \& Scenario Scoring}{14}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}1. Deterministic TTP Rule Engine}{14}{subsection.5.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Deterministic MITRE ATT\&CK Provenance Rule Mapping.}}{14}{table.5.1}\protected@file@percent }
+\newlabel{tab:mitre_mapping}{{5.1}{14}{Deterministic MITRE ATT\&CK Provenance Rule Mapping}{table.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}2. Quantitative Threat Scoring}{14}{subsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Production Deployment Architecture \& Benchmark Results}{15}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Phase 13: Operational Microservice \& SOC Visualization}{15}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Experimental Benchmark Results on DARPA Datasets}{15}{section.6.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Comprehensive Performance Metrics on DARPA TC E3 Campaigns.}}{15}{table.6.1}\protected@file@percent }
+\newlabel{tab:benchmark_results}{{6.1}{15}{Comprehensive Performance Metrics on DARPA TC E3 Campaigns}{table.6.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Defense \& Viva Examination Master Study Guide}{16}{chapter.7}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Top Theoretical \& Architecture Questions}{16}{section.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}1. Why is the model trained unsupervised instead of supervised?}{16}{subsection.7.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}2. Why do we need GAT instead of a standard GCN?}{16}{subsection.7.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.3}3. Why do we incorporate a temporal GRU alongside the spatial GAT?}{16}{subsection.7.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.4}4. How does Link Reconstruction Surprise work mathematically?}{16}{subsection.7.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.5}5. How does the system guarantee a low False Positive Rate ($\text  {FPR} \le 0.1\%$)?}{17}{subsection.7.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.6}6. How does the system prevent Dependency Explosion during graph traversal?}{17}{subsection.7.1.6}\protected@file@percent }
+\gdef \@abspage@last{18}

@@ -1,0 +1,40 @@
+project:
+  name: "AEGIS-PROV-GAT-GRU-VGAE"
+  version: "1.0.0"
+  seed: 42
+
+dataset:
+  name: "DARPA_TC_E3_CADETS"
+  format: "cdm_json"
+  train_ratio: 0.70
+  val_ratio: 0.10
+  test_ratio: 0.20
+
+graph:
+  delta_t: 10.0
+  history_w: 5
+  node_types: ["process", "file", "socket", "principal"]
+  relation_types: ["fork", "execve", "read", "write", "connect", "recv", "send", "unlink"]
+
+model:
+  in_dim: 4
+  gat_hidden_dim: 32
+  gat_heads: 4
+  gat_layers: 2
+  gru_hidden_dim: 64
+  vgae_latent_dim: 32
+  dropout: 0.20
+  lr: 0.001
+  weight_decay: 0.0005
+  beta_kl: 0.01
+
+detection:
+  target_fpr: 0.001
+  knn_k: 10
+  score_weights:
+    edge: 0.70
+    knn: 0.30
+
+investigation:
+  max_trace_depth: 4
+  max_trace_time_window: 300.0
